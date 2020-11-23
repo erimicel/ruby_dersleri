@@ -1,14 +1,14 @@
-# farkli markalari isim olarak bir dizi listesi icine yazdik dizi icindeki pozisyonlari 
+# Farkli markalari isim olarak bir dizi listesi icine yazdik dizi icindeki pozisyonlari 
 # 0 - Renault, 1 - Mazda, 2 - Honda, 3 - Ford
 # Kullanicidan 1 den 4 e kadar sayi alacagimiz icin bu dizi pozisyonlarini cagirirken -1 uygulayacagiz cunku diziler saymaya 0 dan basliyor.
 markalar = ["Renault", "Mazda", "Honda", "Ford"]
-# her marka icin toplam sayi  ve markalarda karsilik gelen indeks pozisyonlarini tutalim bu sayede toplam sayinin pozisyonunu cagirdigimizda ona karsilik gelecek marka ismini alabiliriz.
+# her marka icin markalarda karsilik gelen indeks pozisyonlarini ve toplam sayi degerlerini tutalim bu sayede toplam sayinin pozisyonunu cagirdigimizda ona karsilik gelecek marka ismini alabiliriz.
 renault = [0, 0]
 mazda = [1, 0]
 honda = [2, 0]
 ford = [3, 0]
 
-puts "Programdan cikmak icin marka olarak 111 giriniz"
+puts "Programdan cikmak icin marka olarak 111 giriniz."
 
 # varsayilan degerleri kayit edelim
 top_marka = ""
@@ -36,6 +36,7 @@ while true
     # cikis yapildi
     break
   elsif girdi_kod == 1
+    # ornegin renault icin saymaya basladik bu yuzden dizimizin ikinci ogesi yani indeks pozisyonu 1 deki rakami 1 arttiriyoruz
     renault[1] += 1
   elsif girdi_kod == 2
     mazda[1] += 1
